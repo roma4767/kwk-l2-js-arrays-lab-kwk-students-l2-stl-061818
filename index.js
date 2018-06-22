@@ -18,5 +18,5 @@ function destructivelyRemoveFirstDriver() {
 
 function appendDriver(name) {
   let newList = drivers.push(name)
-  return newList.map()
+  return newList.map(appendDriver)
 }
